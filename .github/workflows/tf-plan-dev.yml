@@ -6,8 +6,11 @@ on:
       - devpoc 
     paths:
       - 'dev/**'    
-  pull_request: 
-
+  pull_request:
+    types:
+      - labeled 
+    paths:
+      - 'dev/**'
 jobs:
   terraform:
     name: "TF_DEV"

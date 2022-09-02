@@ -7,6 +7,10 @@ on:
     paths:
       - 'prod/**'    
   pull_request:
+    types:
+      - labeled
+    paths:
+      - 'prod/**'  
 
 jobs:
   terraform:
